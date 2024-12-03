@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+#sidebar{
+   display: flex;
+   flex-direction: column;
+   background-color:rgb(162, 149, 160); 
+}
+
+#toggler{
+    display:none;
+}
+
+.toggle-btn{
+    display: flex;
+    align-items:center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:#FFF;
+    padding: 1rem;
+    background-color:rgba(21, 163, 199, 0.716);
+}
+
+.toggle-btn span{
+    font-size:1rem;
+    margin:0;
+    font-weight: 600;
+}
+
+.sidebar-nav{
+    width: 85px;
+    min-width:85px;
+    flex:1 1 auto;
+    display: flex;
+    padding:25px 0;
+    flex-direction: column;
+    transition: all  .25s ease-in-out;
+}
+
+#sidebar #toggler:checked~.sidebar-nav{
+  width:270px;
+  min-width:270px;
+}
+
+#sidebar #toggler:not(:checked)~.search-bar .search-query{
+    display: none;
+}
+
+#sidebar #toggler:not(:checked)~.toggle-btn span{
+    display: none;
+}
+
+#sidebar #toggler:not(:checked)~* .sidebar-link span{
+    display:none;
+}
+
+.search-bar{
+    max-width: 200px;
+    background-color: rgb(38, 182, 190);
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px auto;
+    border-radius:20px;
+}
+
+.search-bar .search-query{
+    flex:1 1 auto;
+    padding-right:2rem;
+    width:1%;
+    border: none;
+    color:rgb(48, 117, 182);
+    font-family:'Poppins',sans-serif;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.search-bar .search-icon{
+    color:cadetblue;
+    padding:0.375rem 1.625rem;
+    font-size:1.1rem;
+    justify-items: center;
+}
+
+.search-query:focus-visible{
+    outline: none;
+}
+
+.sidebar-link{
+    padding:15px;
+    color: rgba(15, 108, 118, 0.696);
+    display: block;
+    font-size:0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i{
+    font-size:1.1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover{
+    background-color: rgba(160, 185, 209, 0.901);
+    border-left:3px solid rgb(207, 200, 121);
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    width:100%;
+    overflow:hidden;
+    padding:1.5rem;
+    justify-content: center;
+    transition: all 0.35s ease-in-out;
+    background-color: #4a9387;
+}
+
+h2{
+    text-align: center;
+}
+
+.search-bar{
+    margin-left:10px;
+}
+
+.sidebar-footer{
+    margin-top: 5px;
+
+}

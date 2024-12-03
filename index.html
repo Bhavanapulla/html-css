@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<script src="https://kit.fontawesome.com/7dfe5505a0.js" crossorigin="anonymous"></script>
+<body>
+    <style>
+        span{
+            color:black;
+        }
+       .sidebar-nav{
+        padding:0;
+        margin:0;
+       }
+       .sidebar-link{
+        text-decoration: none;
+       }
+    </style>
+    <div class = "container">
+      <aside id="sidebar">
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="toggle-btn">
+            <i class='bx bx-grid-alt'></i>
+            <span>CodezSword</span>
+        </label>
+        <form action="#" class="search-bar">
+            <span class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" class="search-query" placeholder="search..here">
+        </form>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+              <a href="#"class="sidebar-link">
+                <i class='bx bx-user'></i>
+                <span>Profile</span>
+              </a>  
+            </li>
+              <li class="sidebar-item">
+                <a href="#"class="sidebar-link">
+                    <i class="fa-solid fa-list-check"></i>
+                  <span>Task</span>
+                </a>  
+              </li>
+              <li class="sidebar-item">
+                <a href="#"class="sidebar-link">
+                    <i class="fa-solid fa-id-badge"></i>
+                  <span>Auth</span>
+                </a>  
+              </li>
+              <li class="sidebar-item">
+                <a href="#"class="sidebar-link">
+                    <i class='bx bx-wallet'></i>
+                  <span>Packages</span>
+                </a>  
+              </li>
+              <li class="sidebar-item">
+                <a href="#"class="sidebar-link">
+                    <i class='bx bx-notification'></i>
+                  <span>Notification</span>
+                </a>  
+              </li>
+              <li class="sidebar-item">
+                <a href="#"class="sidebar-link">
+                    <i class='bx bx-cog'></i>
+                  <span>Settings</span>
+                </a>  
+              </li>
+              <li class="sidebar-item">
+                <a href="#"class="sidebar-link">
+                    <i class='bx bx-layout'></i>  
+                  <span>Page</span>
+                </a>  
+              </li>
+        </ul>
+        <div class="sidebar-fotter">
+            <a href="#" class="sidebar-link">
+                <i class="fa-solid fa-right-from-bracket"></i> 
+                <span>Logout</span>
+            </a>
+        </div>
+      </aside>
+       <div class="main">
+        <h2>Sidebar HTML CSS</h2>
+       </div>
+    </div>
+</body>
+</html>
